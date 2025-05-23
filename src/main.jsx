@@ -10,6 +10,7 @@ import Favorites from "./Page/Favorites";
 import AuthProvider from "./Provider/AuthProvider";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import MovieDetail from "./Page/MovieDetail";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/login", element: <Login /> },
       { path: "/favorites", element: <Favorites /> },
+      { path: "/movie/:id", element: <MovieDetail /> },
     ],
   },
 ]);

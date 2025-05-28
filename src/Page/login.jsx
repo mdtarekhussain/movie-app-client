@@ -27,7 +27,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-[70vh]">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 p-3">
       <button
         onClick={handleLogin}
         className="px-6 py-2 bg-blue-600 text-white rounded"
